@@ -19,9 +19,14 @@ function Sidebar() {
             <br />
             <strong className="sidebar__title">PLAY LISTS</strong>
             <hr className="sidebar__line" />
-            {playlists?.items?.map(playlist => (
+            {/* {playlists?.items?.map(playlist => (
                 <SideBarOption title={ playlist.name }/>
-            ))}
+            ))} */}
+            {
+                [...Array(8)].map((playlist, index) => ( 
+                      <p className="sample_playlist">Sample Play List</p>
+                ))
+            }
         </div>
     );
 }

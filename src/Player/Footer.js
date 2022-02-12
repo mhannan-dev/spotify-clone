@@ -13,25 +13,32 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer__left">
-                <p>Album and songs details</p>
+                <img
+                    src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
+                    alt="logo" className="footer__albumLogo"
+                />
+                <div className="footer__songInfo">
+                    <h4>Yeah!!</h4>
+                    <p>Usher</p>
+                </div>
             </div>
             <div className="footer__center">
-                <Shuffle className="" />
+                <Shuffle className="footer__green"/>
                 <SkipPreviousIcon className="" />
                 <PlayCircleOutline className="" />
                 <SkipNextIcon className="" />
-                <RepeatIcon className="" />
+                <RepeatIcon className="footer__green" />
             </div>
             <div className="footer__right">
                 <Grid container spacing={2}>
                     <Grid item xs={8}>
-                    <PlaylistPlayIcon />
+                        <PlaylistPlayIcon />
                     </Grid>
                     <Grid item xs={4}>
-                    <VolumeDownIcon />
+                        <VolumeDownIcon  className="footer__green"/>
                     </Grid>
                     <Grid item xs>
-                    <Slider aria-labelledby="continuous-slider" />
+                        <Slider aria-labelledby="continuous-slider" className="slider"/>
                     </Grid>
                 </Grid>
             </div>

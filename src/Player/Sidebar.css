@@ -25,3 +25,13 @@
     border: 1px solid #282828;
     width: 90%;
 }
+.sample_playlist {
+    margin-left: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #B3B3A2;
+
+}
+.sample_playlist:hover {
+    color: #FFFFFF;
+}
