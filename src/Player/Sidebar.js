@@ -8,7 +8,7 @@ import { useDataLayerValue } from '../DataLayer'
 
 function Sidebar() {
     const [{ playlists }, dispatch] = useDataLayerValue()
-    
+
     return (
         <div className="sidebar">
             <img className="sidebr__logo" src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
@@ -19,13 +19,10 @@ function Sidebar() {
             <br />
             <strong className="sidebar__title">PLAY LISTS</strong>
             <hr className="sidebar__line" />
-            {/* {playlists?.items?.map(playlist => (
-                <SideBarOption title={ playlist.name }/>
-            ))} */}
             {
-                [...Array(8)].map((playlist, index) => ( 
-                      <p className="sample_playlist">Sample Play List</p>
-                ))
+                [playlists].map((playlist, index) => ( 
+                    <SideBarOption key={index.toString()} value={ playlist }/>
+              ))
             }
         </div>
     );
